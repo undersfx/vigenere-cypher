@@ -20,7 +20,7 @@ def key(msg, chave):
 	return keystream
 
 def cifra(msg, chave):
-	'''Cifra mensagem com base e uma chave no padrão de cifra de Vigenere.'''
+	'''Cifra mensagem com base e uma chave no padrão de cifra de vigenere.'''
 
 	keystream = key(msg, chave)
 
@@ -44,7 +44,7 @@ def cifra(msg, chave):
 	return cifra
 
 def descifra(msg, chave):
-	'''Descifra mensagem com base e uma chave no padrão de cifra de Vigenere.'''
+	'''Descifra mensagem com base e uma chave no padrão de cifra de vigenere.'''
 
 	keystream = key(msg, chave)
 
