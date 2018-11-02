@@ -3,17 +3,15 @@ def key(msg, chave):
 
 	k = 0
 	keystream = chave
-
+	
 	# Se a chave for maior que a mensagem, reduz a chave
 	if len(chave) > len(msg):
 		keystream = chave[:len(msg)]
 
 	# Se a mensagem for maior que a chave, repete a chave do inicio até a equivalencia
 	while len(keystream) < len(msg):
-		# Reseta o contador para a primeira posição caso chegar no limite da dimensão da chave
 		if k >= len(chave):
 			k = 0
-
 		keystream = keystream + chave[k:k+1]
 		k +=1
 
@@ -91,8 +89,8 @@ if __name__ == "__main__":
 			except:
 			 	print(ajuda)
 	else:
-		# Pegar inputs na execução do programa  
-		opc = input('c:cifrar | d:descifrar:')
+		# Pegar inputs na execução do programa
+		opc = input('cifrar (c) ou descifrar (d):')
 		msg = input('mensagem:')
 		chave = input('chave:')
 
