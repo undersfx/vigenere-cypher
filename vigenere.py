@@ -1,5 +1,5 @@
 def key(msg, chave):
-	'''Gera uma chave equivalente a mensagem.'''
+	'''Gera a keystream do tamanho da mensagem.'''
 
 	k = 0
 	keystream = chave
@@ -79,7 +79,6 @@ if __name__ == "__main__":
 			print(ajuda)
 		else:
 			try:
-				# Pegar inputs passados na linha de comando
 				if sys.argv[1] == 'c':
 					print(cifra(sys.argv[2], sys.argv[3]))
 				elif sys.argv[1] == 'd':
@@ -89,7 +88,6 @@ if __name__ == "__main__":
 			except:
 			 	print(ajuda)
 	else:
-		# Pegar inputs na execução do programa
 		opc = input('cifrar (c) ou descifrar (d):')
 		msg = input('mensagem:')
 		chave = input('chave:')
