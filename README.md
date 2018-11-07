@@ -6,12 +6,12 @@ A cifra de Vigenère é um método de criptografia simples que usa uma série de
 
 Exemplo:
 
-	>>> from vigenere import *
+	>>> import vigenere
 	>>> msg = 'foo'
 	>>> key = 'bar'
-	>>> cifra(msg, key)
+	>>> vigenere.cifra(msg, key)
 	'gof'
-	>>> descifra('gof', key)
+	>>> vigenere.descifra('gof', key)
 	'foo'
 
 Ou:
