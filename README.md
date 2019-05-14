@@ -1,10 +1,12 @@
 # Vigenere Cypher
 
-Exercício: Cifra e descifra utilizando o método de Vigenere.
+Exercício: 
+Cifra e descifra utilizando o método de Vigenere.
 
+Como funciona:
 A cifra de Vigenère é um método de criptografia simples que usa uma série de diferentes cifras de César baseadas em letras de uma senha.
 
-Exemplo:
+Exemplo de uso:
 
 	>>> import vigenere
 	>>> msg = 'foo'
