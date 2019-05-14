@@ -92,9 +92,9 @@ if __name__ == "__main__":
 		msg = input('mensagem:')
 		chave = input('chave:')
 
-		if opc == 'c':
+		if opc in ('c', 'C'):
 			print(cifra(msg, chave))
-		elif opc == 'd':
+		elif opc in ('d', 'D'):
 			print(descifra(msg, chave))
 		else:
 			print(ajuda)
